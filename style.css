@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: none;
+}
+button {
+  border: 0;
+}
+.nav {
+  width: 2.56rem;
+  height: 100vh;
+  background-color: #06064d;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: space-around;
+  align-items: center;
+  padding-left: 0.75rem;
+  padding-top: 0.75rem;
+  padding: 1rem 1rem 0 1rem;
+  transition: width 0.3s linear;
+}
+
+.nav-items {
+  appearance: none;
+  width: inherit;
+  height: 50px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 60px;
+  background-color: transparent;
+  overflow: hidden;
+  display: flex;
+  justify-content: baseline;
+  padding-right: 2.7rem;
+  padding-bottom: 3.5rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  outline: 0;
+}
+
+i {
+  position: relative;
+  top: 1.3em;
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+  padding-left: 0.3rem;
+  margin-right: 1.1rem;
+}
+.nav:hover {
+  width: 10rem;
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: lighter;
+}
+/* #logo{
+    width: inherit;
+     background-color: #06064d;
+     background-image: url(	https://sr-sidebar.shiprocket.in/assets/navbar/logo-sm.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 80%;
+    margin-left: 0.5rem; 
+   background-position: center;
+  
+    padding-right: 0.4rem;
+    transition: background-image 1s linear ;
+} */
+
+button:focus {
+  width: inherit;
+  height: 50px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 60px;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  justify-content: baseline;
+  padding-right: 2.7rem;
+  padding-bottom: 3.5rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  color: #000;
+}
+h1 {
+  animation: flicker 1.5s infinite alternate;
+}
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa,
+      0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+.nav #logo img {
+  width: 30rem;
+  padding-left: 25px;
+
+  transition: all 0.5s ease-in;
+}
+.nav:hover #logo img {
+  width: 13rem;
+  height: 2.4em;
+  padding-left: 15px;
+}
